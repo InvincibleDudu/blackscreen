@@ -1,0 +1,27 @@
+{
+  "name": "blackscreen",
+  "version": "1.0.0",
+  "description": "A simple electron app that turns your screen black, recommended for OLED screens",
+  "main": "index.js",
+  "author": "InvincibleDudu",
+  "scripts": {
+    "start": "npx tsc index.ts && electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.3.1",
+    "@electron-forge/maker-deb": "^7.3.1",
+    "@electron-forge/maker-rpm": "^7.3.1",
+    "@electron-forge/maker-squirrel": "^7.3.1",
+    "@electron-forge/maker-zip": "^7.3.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.3.1",
+    "@electron-forge/plugin-fuses": "^7.3.1",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^29.1.6",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
