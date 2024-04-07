@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "InvincibleDudu",
   "scripts": {
-    "start": "npx tsc index.ts && electron-forge start",
+    "start": "npx tsc index.ts && npx tsc preload.ts && electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },

@@ -1,7 +1,7 @@
 // Modules to control application life and create native browser window
 import { app, BrowserWindow, Tray, Menu } from 'electron'
 
-// const path = require('node:path')
+const path = require('node:path')
 
 const createWindow = () => {
    const win = new BrowserWindow({
@@ -10,7 +10,7 @@ const createWindow = () => {
       skipTaskbar: true,
       autoHideMenuBar: true,
       webPreferences: {
-         // preload: path.join(__dirname, 'preload.js')
+         preload: path.join(__dirname, 'preload.js')
       }
    })
 

@@ -1,6 +1,21 @@
+* {
+    font-family: 'Microsoft YaHei UI', serif;
+}
+
 body {
     height: 97vh;
     width: 98vw;
     background: #000;
     cursor: none;
+}
+
+#time {
+    color: #ddd;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    font-size: 6em;
+    place-items: center;
+    height: 40%;
+    transition: .15s all;
 }
